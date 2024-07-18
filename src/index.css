@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper[data-should-center="true"] .swiper-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes red-flashing {
+  0% {
+    color: #d63031;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: #d63031;
+  }
+}
+
+.red-flashing {
+  animation: red-flashing 0.7s infinite;
+}
