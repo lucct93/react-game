@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
+# Funny Theorapy game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This README provides an overview of the React + TypeScript + Vite product for a simple therapy game. The game allows users to drag numbers to a block of math.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To install and run the project locally, follow these steps:
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Run `npm i` or `yarn` to install the dependencies.
+4. Run `npm run dev` or `yarn dev` to start the development server.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Features
+Once the development server is running, you can access the game by opening it in your web browser. 
+You can check out a live demo of the therapy game [here](https://theorapy-game.vercel.app/)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Here are some key features of the therapy game:
+
+- Drag and drop functionality for numbers
+- Interactive math block
+- Game mechanics for an engaging experience
+
+![Logo](./preview/overview.png)
+![Logo](./preview/success.png)
+![Logo](./preview/false.png)
+![Logo](./preview/win.png)
+
+## Tech keywords
+React + TypeScript + Vite Product
