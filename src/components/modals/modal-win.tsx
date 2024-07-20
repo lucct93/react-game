@@ -1,8 +1,8 @@
-import { useGameCtx } from '@/contexts/gameCtx';
 import dayjs from 'dayjs';
 import { useEffect, useMemo } from 'react';
 import Lottie from 'lottie-react';
 import congratulation from '@/assets/con-ani.json';
+import { useGameCtx } from '@/contexts/game-context';
 
 const ModalWin = () => {
   const { questions, countdown, handelPlayAgain, level, setLevel } =

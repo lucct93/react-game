@@ -1,4 +1,4 @@
-import { useGameCtx } from '@/contexts/gameCtx';
+import { useGameCtx } from '@/contexts/game-context';
 import { useEffect, useMemo } from 'react';
 
 const ModalLoss = () => {
@@ -34,7 +34,7 @@ const ModalLoss = () => {
           />
           <div className="absolute inset-0 w-full h-full flex items-center justify-center z-10 flex-col gap-2">
             <span className="text-lg text-[#964B2B] leading-none italic text-center">
-              I'm sorry,
+              I&lsquo;m sorry,
               <br />
               but you can try again
             </span>

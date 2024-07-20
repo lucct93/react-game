@@ -1,11 +1,12 @@
-import Grid from "./components/grid";
-import Level from "./components/level";
-import ListAnswer from "./components/listAnswer";
-import ModalLoss from "./components/modalLoss";
-import ModalWin from "./components/modalWin";
-import MusicBtn from "./components/musicBtn";
-import StartBtn from "./components/startBtn";
-import { useGameCtx } from "./contexts/gameCtx";
+import Grid from './components/grid';
+import Level from './components/assets/level';
+
+import ModalLoss from './components/modals/modal-loss';
+import ModalWin from './components/modals/modal-win';
+import MusicButton from './components/assets/music-btn';
+import StartBtn from './components/assets/start-btn';
+import { useGameCtx } from './contexts/game-context';
+import ListAnswer from './components/blocks/list-answer';
 
 const App = () => {
   const { handelCheat } = useGameCtx();
@@ -14,7 +15,7 @@ const App = () => {
       <div
         className="max-w-6xl h-[640px] bg-center bg-no-repeat relative bg-cover w-full flex flex-col gap-12 items-center "
         style={{
-          backgroundImage: "url(/bg.png)",
+          backgroundImage: 'url(/bg.png)',
         }}
       >
         <button
@@ -26,14 +27,14 @@ const App = () => {
         <ModalLoss />
         <ModalWin />
         <Level />
-        <MusicBtn />
+        <MusicButton />
         <StartBtn />
         <Grid />
         <ListAnswer />
         <div
           className="absolute bottom-0 left-0 right-0 p-4 h-full bg-no-repeat bg-center bg-cover z-0"
           style={{
-            backgroundImage: "url(/clould.png)",
+            backgroundImage: 'url(/clould.png)',
           }}
         />
       </div>

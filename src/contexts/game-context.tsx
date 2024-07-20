@@ -206,13 +206,11 @@ export const GameProvider = ({ children }: { children: React.ReactNode }) => {
     if (!isAllAnswered) return;
 
     stopCountDown();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [questions]);
 
   useDidUpdate(() => {
     resetCountDown();
     startCountDown();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [level]);
 
   return (
@@ -239,7 +237,6 @@ export const GameProvider = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const useGameCtx = () => {
   const ctx = useContext(GameContext);
 

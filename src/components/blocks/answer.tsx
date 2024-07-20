@@ -1,8 +1,9 @@
 import { useDrag } from 'react-dnd';
-import { ItemTypes } from '../constants';
+import { ItemTypes } from '../../constants';
 import { TQuestion } from '@/types';
-import { useGameCtx } from '@/contexts/gameCtx';
+
 import clsx from 'clsx';
+import { useGameCtx } from '@/contexts/game-context';
 
 type Props = {
   question: TQuestion;
@@ -34,7 +35,7 @@ const Answer = ({ question }: Props) => {
         paddingTop: 'calc(100% * 16 / 15)',
       }}
       onClick={() => {
-        setSelectAnswer((prev) => {
+        setSelectAnswer((prev: TQuestion | null) => {
           if (prev === question) return null;
           const audio = new Audio('/select.mp3');
           audio.play();

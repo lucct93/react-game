@@ -1,5 +1,5 @@
 import { ItemTypes } from '@/constants';
-import { useGameCtx } from '@/contexts/gameCtx';
+import { useGameCtx } from '@/contexts/game-context';
 import { useDidUpdate } from '@/hooks/useDidUpdate';
 import { TQuestion } from '@/types';
 import { cn } from '@/utils';
@@ -11,7 +11,7 @@ type Props = {
 
 const Question = ({ question }: Props) => {
   const { handelDrop, isStarted, selectAnswer } = useGameCtx();
-  const [_collect, drop] = useDrop(
+  const [, drop] = useDrop(
     () => ({
       accept: ItemTypes.QUESTION,
       drop: (item: TQuestion) => {

@@ -8,6 +8,5 @@ export const useDidUpdate = (fn: () => void, deps: unknown[]) => {
     } else {
       hasMount.current = true;
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, deps);
 };

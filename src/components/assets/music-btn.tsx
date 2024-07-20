@@ -1,4 +1,4 @@
-import { useGameCtx } from '@/contexts/gameCtx';
+import { useGameCtx } from '@/contexts/game-context';
 import { useEffect, useState } from 'react';
 
 const MusicBtn = () => {

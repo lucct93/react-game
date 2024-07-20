@@ -1,6 +1,6 @@
 import { GAME_LEVELS } from '@/constants';
-import Question from './question';
-import { useGameCtx } from '@/contexts/gameCtx';
+import Question from './blocks/question';
+import { useGameCtx } from '@/contexts/game-context';
 import { useEffect, useState } from 'react';
 
 const Grid = () => {

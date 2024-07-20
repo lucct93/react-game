@@ -1,4 +1,4 @@
-import { useGameCtx } from '@/contexts/gameCtx';
+import { useGameCtx } from '@/contexts/game-context';
 import { useRef } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';

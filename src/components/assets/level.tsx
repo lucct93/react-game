@@ -1,4 +1,4 @@
-import { useGameCtx } from '@/contexts/gameCtx';
+import { useGameCtx } from '@/contexts/game-context';
 
 const Level = () => {
   const { level } = useGameCtx();
